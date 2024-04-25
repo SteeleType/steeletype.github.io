@@ -1,0 +1,7 @@
+.zebra-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+  }
+
+  #pokemon-table {
+    font-family: 'Bangers', cursive; /* Set font family to Bangers */
+  }
