@@ -2,6 +2,87 @@
     background-color: #f2f2f2;
   }
 
-  #pokemon-table {
-    font-family: 'Bangers', cursive; /* Set font family to Bangers */
+  /* ordering the lists with different bullet points */
+  .a {
+    list-style-type: lower-roman; 
   }
+  
+
+  .b {
+    list-style-type: lower-alpha;
+  }
+  
+
+  .c {
+    list-style-type: square; 
+  }
+  
+
+  .d {
+    list-style-type: '$'; 
+  }
+
+#container {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/* link styling */
+body a {
+    text-decoration: none;
+    color: #FF5733;
+}
+
+body a:visited {
+    color: #7F3D26;
+}
+
+body a:hover {
+    color: #FFC300;
+}
+  
+.a li::first-letter {
+color: blue;
+text-transform: uppercase;
+font-size: 150%;
+}
+
+.b li::first-letter {
+color: yellow;
+text-transform: uppercase;
+font-size: 150%;
+}
+
+.c li::first-letter {
+color: green;
+text-transform: uppercase;
+font-size: 120%;
+}
+
+.d li::first-letter {
+color: purple;
+text-transform: uppercase;
+font-size: 120%;
+}
+
+/* navbar styling */
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand {
+    color: green;
+}
+
+.navbar-brand:hover {
+    color: #FFC300; 
+}
+
+.navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFC300; 
+}
