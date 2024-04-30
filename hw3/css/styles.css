@@ -1,3 +1,9 @@
+.uniform-height-img {
+    width: 200%;
+    height: 1000px;
+    object-fit: cover;
+}
+
 /* Navbar container */
 .navbar {
     overflow: hidden;
@@ -21,18 +27,6 @@
     overflow: hidden;
 }
 
-/* Dropdown button */
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-}
-
 /* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
@@ -45,7 +39,7 @@
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -59,12 +53,115 @@
     text-align: left;
 }
 
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 
+
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.btn-group-vertical {
+    display: grid;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn-group {
+    margin-bottom: 0;
+}
+
+:root {
+    --size-header: 2.25rem;
+    --size-accordion-title: 1.25rem;
+    --size-accordion-content: 1rem;
+    --animation-speed: 100;
+    --slide-ease: cubic-bezier(0.86, 0, 0.07, 1);
+    --slide-duration: calc(400ms 100 / var(--animation-speed));
+    --slide-delay: calc(450ms 100 / var(--animation-speed));
+    --circle-duration: calc(900ms 100 var(--animation-speed));
+}
+
+*::before,
+*::after {
+    position: relative;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+p,
+h1 {
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 2rem 2rem;
+    min-height: 100%;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: hsl(4, 91%, 60%);
+}
+
+h1 {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+    font-size: var(--size-header);
+    margin-bottom: 1.25rem;
+    color: #fff;
+}
+
+.accordion {
+    --circle-x: 1.8rem;
+    --circle-y: 0;
+    --circle-r: 200%;
+    --circle-bg: #fff;
+    color: #000;
+    background-color: var(--circle-bg);
+    max-width: 56ch;
+    margin-bottom: 1rem;
+    border-radius: min(8px, 0.5rem);
+    display: grid;
+    grid-template-rows: 0fr 0fr;
+    transition-timing-function: var(--slide-ease);
+    transition-duration: 200ms, 200ms, var(--slide-duration);
+    transition-property: opacity, box-shadow, grid-template-rows;
+    transition-delay: 0ms, 0ms, var(--slide-delay);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    height: 100%;
+}
+
+.accordion:not(:target):hover {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.accordion:not(:target):active {
+    opacity: 1;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+}
+
+.accordion,
+.content {
+    overflow: hidden;
+}
+
