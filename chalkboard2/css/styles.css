@@ -22,7 +22,7 @@
     list-style-type: '$'; 
   }
 
-#container {
+.container {
     font-family: "Bangers", system-ui;
     font-weight: 400;
     font-style: normal;
