@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.navbar {
+    background-color: #800000;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #333; 
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #666; 
+}
+
+.btn {
+    background-color: #666;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.btn-warning {
+    background-color: #800000;
+}
+
+.btn-warning:hover {
+    background-color: #660000;
+}
+
+.btn-success {
+    background-color: #008000;
+}
+
+.btn-success:hover {
+    background-color: #006400;
+}
+
+.form-control {
+    background-color: #eee;
+    color: #333; 
+}
+
+.container {
+    margin-top: 20px;
+}
