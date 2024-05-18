@@ -1,0 +1,12 @@
+body {
+    background-color: #f0f0f0; /* Grey background color */
+}
+
+.table {
+    font-size: 12px; /* Small font size for tables */
+}
+
+.table td,
+.table th {
+    color: red; /* Red text color for table cells */
+}
