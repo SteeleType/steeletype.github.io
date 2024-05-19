@@ -15,57 +15,74 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        <link href="../css/navstyles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <style>
+        .content {
+            text-align: center; /* Center the text horizontally */
+        }
+        </style>
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Steele's Awesome Pad</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Digital Chalkboard's Assignments
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="chalkboard1/chalkboard1.html">Chalkboard Week 2</a></li>
-                      <li><a class="dropdown-item" href="chalkboard2/Digital Chalkboard Week03.html">Chalkboard Week 3</a></li>
-                      <li><a class="dropdown-item" href="chalkboard3/chalkboard3.html">Chalkboard Week 4</a></li>
-                      <li><a class="dropdown-item" href="chalkboard4/chalkboard4.html">Chalkboard Week 5</a></li>
-                      <li><a class="dropdown-item" href="chalkboard5/chalkboard5.html">Chalkboard Week 6</a></li>
-                      <li><a class="dropdown-item" href="chalkboard6/chalkboard6.html">Chalkboard Week 7</a></li>
-                      <li><a class="dropdown-item" href="chalkboard7/chalkboard7.html">Chalkboard Week 8</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Technical Presentation Assignments
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="hw1/hw1.html">Technical Presentation Week 2</a></li>
-                      <li><a class="dropdown-item" href="hw2/index.html">Technical Presentation Week 3</a></li>
-                      <li><a class="dropdown-item" href="hw3/hw3.html">Technical Presentation Week 4</a></li>
-                      <li><a class="dropdown-item" href="hw4/hw4.html">Technical Presentation Week 5</a></li>
-                      <li><a class="dropdown-item" href="hw5/hw5.html">Technical Presentation Week 6</a></li>
-                    </ul>
-                
-                </ul>
-                
-              </div>
+        <!--Nav Bar-->
+        <div id="nav-placeholder"></div>
+        <body>
+          <!--Nav Bar-->
+          <div id="nav-placeholder"></div>
+  
+          <div class="container mt-3">
+            <div class="row d-flex align-items-center" style="background-color: black;">
+                <div class="col-sm-4">
+                    <img src="hw3/images/5.jpg" class="rounded-circle mx-auto d-block img-fluid" alt="Tails">
+                </div>
+                <div class="col-sm-8">
+                    <blockquote class="blockquote">
+                        <p style="color: white">"Plz help me..."</p>
+                    </blockquote>
+                </div>
             </div>
-          </nav>
-        
+          </div>
+        <div class="content">
+        <h1>Welcome to My Website!</h1>
+        <p>Here you can see my about and bio, some of my ASCII art, and my digital chalkboard and technical assignments.</p>
 
-        <script
+        <h2>About</h2>
+        <p>The about page will show you my bio and link you to my itch.io page. Here you can all the games that I make and please you the email feature below to tell me what you think!.</p>
+     
+        <h2>ASCII</h2>
+        <p>I like to make ASCII art! So plesae check out the little guys I make. Here is a little sneak peak of one of them:</p>
+        <div class="content">
+          <pre>
+     ___
+  __|___|__
+  \_____  `\
+        \  \
+    __  (__) \
+   /  \__//  \ \
+  /___________\
+    |_|_| |_|_|
+    _|       |_ 
+          </pre>
+      </div>
+
+        <h2>Digital Chalkboard</h2>
+        <p>Check out my digital chalkboard where you can find my class assignments</p>
+    
+        <h2>Technical Assignments</h2>
+        <p>Explore my technical assignments and projects to see my skills in action.</p>
+    
+            <div id="footer-placeholder"></div>
+          </div>
+    </body>
+
+            <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
             crossorigin="anonymous"
@@ -76,5 +93,7 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script src="../nav.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     </body>
 </html>

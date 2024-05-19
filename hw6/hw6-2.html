@@ -21,59 +21,15 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Steele's Awesome Pad</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Digital Chalkboard's Assignments
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href=" chalkboard1/chalkboard1.html">Chalkboard Week 2</a></li>
-                      <li><a class="dropdown-item" href="chalkboard2/Digital Chalkboard Week03.html">Chalkboard Week 3</a></li>
-                      <li><a class="dropdown-item" href="chalkboard3/chalkboard3.html">Chalkboard Week 4</a></li>
-                      <li><a class="dropdown-item" href="chalkboard4/chalkboard4.html">Chalkboard Week 5</a></li>
-                      <li><a class="dropdown-item" href="chalkboard5/chalkboard5.html">Chalkboard Week 6</a></li>
-                      <li><a class="dropdown-item" href="chalkboard6/chalkboard6.html">Chalkboard Week 7</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Technical Presentation Assignments
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="hw1/hw1.html">Technical Presentation Week 2</a></li>
-                      <li><a class="dropdown-item" href="hw2/index.html">Technical Presentation Week 3</a></li>
-                      <li><a class="dropdown-item" href="hw3/hw3.html">Technical Presentation Week 4</a></li>
-                      <li><a class="dropdown-item" href="hw4/hw4.html">Technical Presentation Week 5</a></li>
-                      <li><a class="dropdown-item" href="hw5/hw5.html">Technical Presentation Week 6</a></li>
-                    </ul>
-                
-                </ul>
-                
-              </div>
-            </div>
-          </nav>
 
       <!-- Output from JS function loads here -->
       <h1>OCHRE API Example 2</h1>
 
-      <div id="ochreContainer" data-uuid = '50f7b9a5-329a-49ab-85e2-f8fb4ee6e867'>
-      <div>
-          <div id="preview">
-          </div>
-      </div>
+        <!-- Output from JS function loads here -->
+    <div class="container mt-3" id="ochreContainer" data-uuid = '50f7b9a5-329a-49ab-85e2-f8fb4ee6e867'>
+        <h1 id="title"></h1>
+        <div class="image" id="preview"></div>
+    </div>
 
       <div class="container mt-4 mb-4">
         <div class="row">
@@ -83,6 +39,7 @@
           </div>
         </div>
       </div>
+      
 
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

@@ -1,0 +1,60 @@
+    <!--Nav Bar-->
+    <link href="css/navstyles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="link" href="/art.html">ASCII ART</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Digital Chalkboards
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/chalkboard1/chalkboard1.html">Digital Chalkboard 1</a></li>
+                  <li><a class="dropdown-item" href="/chalkboard2/chalkboard2.html">Digital Chalkboard 2</a></li>
+                  <li><a class="dropdown-item" href="/chalkboard3/chalkboard3.html">Digital Chalkboard 3</a></li>
+                  <li><a class="dropdown-item" href="/chalkboard4/chalkboard4.html">Digital Chalkboard 4</a></li>
+                  <li><a class="dropdown-item" href="/chalkboard5/chalkboard5.html">Digital Chalkboard 5</a></li>
+                  <li><a class="dropdown-item" href="/chalkboard6/chalkboard6.html">Digital Chalkboard 6</a></li>
+                  <li><a class="dropdown-item" href="/chalkboard7/chalkboard7.html">Digital Chalkboard 7</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Technical Presentations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/hw1/hw1.html">Technical Presentation 1</a></li>
+                  <li><a class="dropdown-item" href="/hw2/hw2.html">Technical Presentation 2</a></li>
+                  <li><a class="dropdown-item" href="/hw3/hw3.html">Technical Presentation 3</a></li>
+                  <li><a class="dropdown-item" href="/hw4/hw4.html">Technical Presentation 4</a></li>
+                  <li><a class="dropdown-item" href="/hw5/hw5.html">Technical Presentation 5</a></li>
+                  <li><a class="dropdown-item" href="/hw6/hw6.html">Technical Presentation 6</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      <!--End Nav Bar-->
+      <script>
+        var pathname = window.location.pathname;
+        var cleanPath = pathname.substring(pathname.lastIndexOf('/') + 1);
+        $('[href*="' + cleanPath + '"]').addClass('active');
+      </script>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
